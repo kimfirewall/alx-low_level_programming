@@ -10,7 +10,7 @@ int main(void)
 
 	while (x <= 122)
 	{
-		if (x == 102 || x == 113)
+		if (x == 101 || x == 113)
 		{
 			x++;
 			continue;
