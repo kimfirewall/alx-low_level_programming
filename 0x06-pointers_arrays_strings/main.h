@@ -23,3 +23,5 @@ void print_number(int n);
 char *rot13(char *);
 
 char *leet(char *);
+
+int _putchar(char c);
