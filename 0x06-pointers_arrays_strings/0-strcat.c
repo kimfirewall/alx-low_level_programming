@@ -10,22 +10,18 @@ i#include "main.h"
  */
 char *_strcat(char *dest, char *src)
 {
-	int x;
-	int z;
+	int x, z;
 
 	x = 0;
 	while (dest[x] != '\0')
-	{
 		x++;
-	}
 	z = 0;
-	while (src[z] != '\0')
-	{
-		dest[x] = src[z];
-		x++;
-		z++;
-	}
-
-	dest[i] = '\0';
+		while (src[z] != '\0')
+		{
+			dest[x] = src[z];
+			x++;
+			z++;
+		}
+	dest[x] = '\0';
 	return (dest);
 }
