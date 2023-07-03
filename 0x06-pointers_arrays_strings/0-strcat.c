@@ -1,4 +1,4 @@
-i#include "main.h"
+#include "main.h"
 
 /**
  * _strcat - Concatenates two strings.
@@ -10,18 +10,17 @@ i#include "main.h"
  */
 char *_strcat(char *dest, char *src)
 {
-	int x, z;
+	int a, b;
 
-	x = 0;
-	while (dest[x] != '\0')
-		x++;
-	z = 0;
-		while (src[z] != '\0')
-		{
-			dest[x] = src[z];
-			x++;
-			z++;
-		}
-	dest[x] = '\0';
+	for (a = 0; dest[a] != '\0'; a++)
+		;
+
+	for (b = 0; src[b] != '\0'; b++)
+	{
+		dest[a] = src[b];
+		a++;
+	}
+
+	dest[a] = '\0';
 	return (dest);
 }
